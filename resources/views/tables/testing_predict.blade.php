@@ -4,9 +4,9 @@
     <div class="module-head">
         <h3>Tender Prediction Result</h3>
     </div>
-    <div class="module-option clearfix">
+    <div class="module-option clearfix" style=" background-color: #f2f2f2; padding: 15px; margin-top: 15px;">
         <div class="pull-left">
-            <a href="/testing" class="btn btn-default">
+            <a href="/testing" class="btn btn-default" style=" background-color: #f2f2f2; ">
                 <button class="btn btn-info" href="/testing">Back To Testing</button>
             </a>
         </div>
@@ -34,13 +34,21 @@
                     <td>{{ $row->jenis_pengadaan }}</td>
                     <td>{{ $row->pagu }}</td>
                     <td> {{ $row->bulan }}</td>
-                    <td class="center">{{$row->kelas_asli}}</td>
-                    <td class="center"> <b> {{$row->kelas_predict}} </b></td>
+                    @if($row->kelas_asli == 2)
+                    <td class="center">Gagal Tender</td>
+                    @else
+                    <td class="center">Sukses Tender</td>
+                    @endif
+                    @if($row->kelas_predict == 2)
+                    <td class="center" style="color: red;"> Gagal Tender</td>
+                    @else
+                    <td class="center" style="color: green;">Sukses Tender</td>
+                    @endif
                 </tr>
                 @endforeach
                 <!-- @else -->
                 <!-- <tr>
-                    <td colspan="10">There are no data.</td>
+                    <td colspan=" 10">There are no data.</td>
                 </tr> -->
                 <!-- @endif -->
             </tbody>

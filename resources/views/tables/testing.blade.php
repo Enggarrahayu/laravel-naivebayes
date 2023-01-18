@@ -6,7 +6,7 @@
     <div class="module-head">
         <h3>Testing Data</h3>
     </div>
-    <div class="module-option clearfix">
+    <div class="module-option clearfix" style=" background-color: #f2f2f2; padding: 15px; margin-top: 15px;">
         <div class="pull-left">
             <form method="post" enctype="multipart/form-data" action="{{url('import')}}">
                 @csrf
@@ -29,7 +29,7 @@
         </div>
     </div>
     <div class="module-body table">
-        <table cellpadding="0" cellspacing="0" border="0" class="datatable-1 table table-bordered table-striped	 display" width="100%">
+        <table cellpadding="0" cellspacing="0" class="datatable-1 table table-bordered table-striped	 display" width="100%">
             <thead>
                 <tr>
                     <th>Metode Pengadaan</th>
@@ -47,7 +47,11 @@
                     <td>{{ $row->jenis_pengadaan }}</td>
                     <td>{{ $row->pagu }}</td>
                     <td> {{ $row->bulan }}</td>
-                    <td class="center">{{$row->kelas_asli}}</td>
+                    @if($row->kelas_asli == 2)
+                    <td class="center">Gagal Tender</td>
+                    @else
+                    <td class="center">Sukses Tender</td>
+                    @endif
                 </tr>
                 @endforeach
                 <!-- @else -->
