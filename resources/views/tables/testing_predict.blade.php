@@ -1,28 +1,14 @@
 @extends('layout/master')
 @section('content')
-
-
 <div class="module">
     <div class="module-head">
-        <h3>Testing Data</h3>
+        <h3>Tender Prediction Result</h3>
     </div>
     <div class="module-option clearfix">
         <div class="pull-left">
-            <form method="post" enctype="multipart/form-data" action="{{url('import')}}">
-                @csrf
-                <div class="form-group">
-                    <div class="input-group">
-                        <label> <b>Import data from excel</b> <small class="warning text-muted">{{__('Please upload only Excel (.xlsx or .xls) files')}}</small></label>
-                        <input name="uploaded_file" type="file" class="form-control">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <input name="upload" type="submit" value="Upload Data" class="btn btn-success">
-                    <input name="delete_all" type="submit" value="Hapus Semua" class="btn btn-danger">
-                    <a href="/predictAll" class="btn btn-default">
-                        <i class="fa fa-refresh"></i>Predict Data</a>
-                </div>
-            </form>
+            <a href="/testing" class="btn btn-default">
+                <button class="btn btn-info" href="/testing">Back To Testing</button>
+            </a>
         </div>
         <div class="pull-right">
 
@@ -37,6 +23,7 @@
                     <th>Pagu</th>
                     <th>Bulan</th>
                     <th>Kelas Asli</th>
+                    <th>Kelas Predict </th>
                 </tr>
             </thead>
             <tbody>
@@ -48,6 +35,7 @@
                     <td>{{ $row->pagu }}</td>
                     <td> {{ $row->bulan }}</td>
                     <td class="center">{{$row->kelas_asli}}</td>
+                    <td class="center"> <b> {{$row->kelas_predict}} </b></td>
                 </tr>
                 @endforeach
                 <!-- @else -->

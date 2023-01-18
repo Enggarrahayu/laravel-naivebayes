@@ -1,0 +1,97 @@
+metode_pengadaan,jenis_pengadaan,pagu,bulan,status
+E-Purchasing,Barang,Sangat Rendah,Sedang,2
+E-Purchasing,Barang,Sangat Rendah,Sedang,2
+Tender Cepat,Barang,Rendah,Dekat,2
+Tender,Barang,Rendah,Sedang,2
+Tender,Barang,Tinggi,Dekat,2
+Seleksi,Jasa Konsultansi,Sangat Rendah,Sedang,2
+Seleksi,Jasa Konsultansi,Sangat Rendah,Jauh,2
+Seleksi,Jasa Konsultansi,Tinggi,Jauh,2
+Seleksi,Jasa Konsultansi,Sangat Rendah,Sedang,2
+Seleksi,Jasa Konsultansi,Sangat Rendah,Jauh,2
+Seleksi,Jasa Konsultansi,Sangat Rendah,Jauh,2
+Tender,Jasa Lainnya,Sangat Rendah,Jauh,2
+Tender,Jasa Lainnya,Sangat Tinggi,Sedang,2
+Tender,Jasa Lainnya,Rendah,Jauh,2
+Tender,Jasa Lainnya,Rendah,Jauh,2
+Tender,Jasa Lainnya,Tinggi,Jauh,2
+Tender,Jasa Lainnya,Rendah,Jauh,2
+Tender,Pekerjaan Konstruksi,Rendah,Sedang,2
+Tender,Pekerjaan Konstruksi,Sangat Tinggi,Sedang,2
+Tender,Pekerjaan Konstruksi,Sangat Tinggi,Dekat,2
+Tender,Pekerjaan Konstruksi,Sangat Tinggi,Sedang,2
+Tender,Pekerjaan Konstruksi,Rendah,Sedang,2
+Tender,Pekerjaan Konstruksi,Tinggi,Sedang,2
+Tender,Pekerjaan Konstruksi,Sangat Tinggi,Sedang,2
+Tender,Pekerjaan Konstruksi,Sangat Rendah,Sedang,2
+Tender,Pekerjaan Konstruksi,Sangat Tinggi,Sedang,2
+Tender,Pekerjaan Konstruksi,Tinggi,Sedang,2
+Tender,Pekerjaan Konstruksi,Tinggi,Sedang,2
+Tender,Pekerjaan Konstruksi,Sangat Tinggi,Sedang,2
+Tender,Pekerjaan Konstruksi,Tinggi,Jauh,2
+Tender Cepat,Pekerjaan Konstruksi,Sangat Rendah,Sedang,2
+E-Purchasing,Barang,Sangat Rendah,Jauh,2
+Tender,Barang,Tinggi,Jauh,2
+E-Purchasing,Barang,Sangat Rendah,Dekat,2
+Tender,Barang,Sangat Rendah,Dekat,2
+E-Purchasing,Barang,Sangat Rendah,Sedang,2
+E-Purchasing,Barang,Sangat Rendah,Dekat,2
+Tender,Barang,Sangat Rendah,Dekat,2
+Tender,Pekerjaan Konstruksi,Tinggi,Dekat,2
+Tender,Pekerjaan Konstruksi,Sangat Rendah,Sedang,2
+Tender Cepat,Barang,Sangat Rendah,Jauh,1
+Tender,Pekerjaan Konstruksi,Rendah,Dekat,1
+Tender,Pekerjaan Konstruksi,Sangat Tinggi,Sedang,1
+Tender,Pekerjaan Konstruksi,Tinggi,Sedang,1
+Tender,Pekerjaan Konstruksi,Sangat Tinggi,Sedang,1
+Tender,Pekerjaan Konstruksi,Sangat Tinggi,Sedang,1
+Tender,Pekerjaan Konstruksi,Tinggi,Sedang,1
+Seleksi,Jasa Konsultansi,Sangat Rendah,Sedang,1
+Tender,Pekerjaan Konstruksi,Tinggi,Sedang,1
+Tender,Pekerjaan Konstruksi,Tinggi,Sedang,1
+Tender,Pekerjaan Konstruksi,Tinggi,Sedang,1
+Seleksi,Jasa Konsultansi,Sangat Rendah,Sedang,1
+Seleksi,Jasa Konsultansi,Sangat Rendah,Sedang,1
+Tender,Pekerjaan Konstruksi,Rendah,Dekat,1
+Tender,Pekerjaan Konstruksi,Rendah,Dekat,1
+Seleksi,Jasa Konsultansi,Rendah,Jauh,1
+Tender,Jasa Lainnya,Sangat Rendah,Jauh,1
+Tender,Jasa Lainnya,Sangat Rendah,Jauh,1
+Tender,Jasa Lainnya,Sangat Rendah,Jauh,1
+Tender,Jasa Lainnya,Tinggi,Jauh,1
+Tender,Jasa Konsultansi,Sangat Rendah,Jauh,1
+Tender,Jasa Lainnya,Sangat Rendah,Jauh,1
+Seleksi,Jasa Konsultansi,Rendah,Jauh,1
+Tender,Jasa Lainnya,Sangat Rendah,Jauh,1
+Tender,Jasa Lainnya,Tinggi,Jauh,1
+Tender,Pekerjaan Konstruksi,Sangat Tinggi,Sedang,1
+Tender,Barang,Sangat Rendah,Jauh,1
+Seleksi,Jasa Konsultansi,Tinggi,Jauh,1
+Seleksi,Jasa Konsultansi,Tinggi,Jauh,1
+Seleksi,Jasa Konsultansi,Sangat Rendah,Jauh,1
+E-Purchasing,Barang,Sangat Rendah,Sedang,1
+Seleksi,Jasa Konsultansi,Sangat Rendah,Sedang,1
+E-Purchasing,Barang,Sangat Rendah,Sedang,1
+E-Purchasing,Barang,Sangat Rendah,Jauh,1
+E-Purchasing,Barang,Sangat Rendah,Jauh,1
+Seleksi,Jasa Konsultansi,Sangat Rendah,Sedang,1
+Seleksi,Jasa Konsultansi,Sangat Rendah,Sedang,1
+E-Purchasing,Jasa Lainnya,Sangat Rendah,Jauh,1
+Tender,Barang,Rendah,Dekat,1
+Tender,Pekerjaan Konstruksi,Sangat Tinggi,Dekat,1
+Tender,Jasa Lainnya,Tinggi,Dekat,1
+Tender,Pekerjaan Konstruksi,Sangat Tinggi,Dekat,1
+Tender,Pekerjaan Konstruksi,Sangat Tinggi,Dekat,1
+Tender,Pekerjaan Konstruksi,Tinggi,Dekat,1
+Tender,Pekerjaan Konstruksi,Tinggi,Dekat,1
+Tender,Pekerjaan Konstruksi,Tinggi,Dekat,1
+Tender,Pekerjaan Konstruksi,Rendah,Sedang,1
+Tender,Pekerjaan Konstruksi,Tinggi,Dekat,1
+Tender,Pekerjaan Konstruksi,Sangat Tinggi,Dekat,1
+Tender,Pekerjaan Konstruksi,Sangat Tinggi,Dekat,1
+Seleksi,Jasa Konsultansi,Sangat Rendah,Dekat,1
+Tender,Pekerjaan Konstruksi,Tinggi,Dekat,1
+Tender,Pekerjaan Konstruksi,Sangat Tinggi,Dekat,1
+Tender,Pekerjaan Konstruksi,Tinggi,Dekat,1
+Tender,Pekerjaan Konstruksi,Tinggi,Sedang,1
+Seleksi,Jasa Konsultansi,Tinggi,Jauh,1

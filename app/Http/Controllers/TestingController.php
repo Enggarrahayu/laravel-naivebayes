@@ -9,6 +9,8 @@ use PhpOffice\PhpSpreadsheet\Reader\Exception;
 use PhpOffice\PhpSpreadsheet\Writer\Xls;
 use PhpOffice\PhpSpreadsheet\IOFactory;
 use Illuminate\Http\Request;
+use Phpml\Classification\NaiveBayes;
+use Phpml\Dataset\CsvDataset;
 
 class TestingController extends Controller
 {
@@ -49,5 +51,36 @@ class TestingController extends Controller
             return back()->withErrors('There was a problem uploading the data!');
         }
         return back()->withSuccess('Great! Data has been successfully uploaded.');
+    }
+
+    public function predictAll()
+    {
+        //train model
+        $dataset = new CsvDataset('./dataset/undersampling_.csv', 4, true);
+        // dump($dataset);
+        // die;
+        $samples = $dataset->getSamples();
+        $labels = $dataset->getTargets();
+        $classifier = new NaiveBayes();
+        $classifier->train($samples, $labels);
+
+        //predict
+        $testings = DB::select('select * from testing');
+        // var_dump($testings);
+        // die;
+        $data_predict = [];
+        foreach ($testings as $row) {
+            $row     = get_object_vars($row);
+            array_push($data_predict, array($row['metode_pengadaan'], $row['jenis_pengadaan'], $row['pagu'], $row['bulan']));
+        }
+        // var_dump($data_predict);
+        // die;
+        $count = count($testings);
+        for ($i = 0; $i < $count; $i++) {
+            $sql1 = "UPDATE testing SET kelas_predict='" . $classifier->predict($data_predict)[$i] . "' WHERE id= $i + 1";
+            DB::statement($sql1);
+        }
+        $data = Testing::all();
+        return view('tables/testing_predict', compact('data'));
     }
 }
