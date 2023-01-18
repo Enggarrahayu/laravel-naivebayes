@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\DB;
+use App\Models\Testing;
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Reader\Exception;
 use PhpOffice\PhpSpreadsheet\Writer\Xls;
@@ -11,6 +12,12 @@ use Illuminate\Http\Request;
 
 class TestingController extends Controller
 {
+    public function index()
+    {
+        $data = Testing::all();
+        return view('tables/testing', compact('data'));
+    }
+
     public function excelUpload(Request $request)
     {
         $this->validate($request, [
