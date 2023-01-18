@@ -66,7 +66,7 @@
                                     </i><i class="icon-chevron-down pull-right"></i><i class="icon-chevron-up pull-right">
                                     </i>Testing </a>
                                 <ul id="togglePages2" class="collapse unstyled">
-                                    <!-- <li><a href="/testing"><i class="menu-icon icon-table"></i>Testing Data</a></li> -->
+                                    <li><a href="/testing"><i class="menu-icon icon-table"></i>Testing Data</a></li>
                                     <li><a href=""><i class="menu-icon icon-book"></i>Classification Report</a></li>
                                     <li><a href=""><i class="menu-icon icon-bar-chart"></i>Prediction Results</a></li>
                                 </ul>
@@ -78,9 +78,15 @@
                     <!--/.sidebar-->
                 </div>
                 <!--/.span3-->
+
                 <div class="span9">
-                    @yield('content')
-                    <!--/.content-->
+                    <div class="content">
+
+                        <!--/.content-->
+
+                        @yield('content')
+                    </div>
+
                 </div>
                 <!--/.span9-->
             </div>
