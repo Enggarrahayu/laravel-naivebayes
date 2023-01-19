@@ -7,7 +7,8 @@
     <div class="module-body">
 
         <br>
-        <form class="form-horizontal row-fluid">
+        <form class="form-horizontal row-fluid" method="post" action="/predictNew">
+            @csrf
             <div class="control-group">
                 <label class="control-label" for="basicinput">Nama Paket</label>
                 <div class="controls">
@@ -34,10 +35,10 @@
                 <div class="controls">
                     <select tabindex="1" data-placeholder="Select here.." class="span8" name="jenis_pengadaan">
                         <option value="">Pilih Jenis Pengadaan</option>
-                        <option value="Category 1">Jasa Konsultansi</option>
-                        <option value="Category 2">Barang</option>
-                        <option value="Category 3">Jasa Lainnya</option>
-                        <option value="Category 4">Pekerjaan Konstruksi</option>
+                        <option value="Jasa Konsultansi">Jasa Konsultansi</option>
+                        <option value="Barang">Barang</option>
+                        <option value="Jasa Lainnya">Jasa Lainnya</option>
+                        <option value="Pekerjaan Konstruksi">Pekerjaan Konstruksi</option>
                     </select>
                 </div>
             </div>
@@ -54,7 +55,7 @@
             <div class="control-group">
                 <label class="control-label" for="basicinput">Bulan</label>
                 <div class="controls">
-                    <select tabindex="1" data-placeholder="Pilih Bulan Tender Masuk Dalam Paket Pengadaan " class="span8">
+                    <select tabindex="1" data-placeholder="Pilih Bulan Tender Masuk Dalam Paket Pengadaan " class="span8" name="bulan">
                         <option value="">Select here..</option>
                         <option value="1">Januari</option>
                         <option value="2">Februari</option>
@@ -71,10 +72,9 @@
                     </select>
                 </div>
             </div>
-
             <div class="control-group">
                 <div class="controls">
-                    <button type="submit" class="btn">Submit Form</button>
+                    <button type="submit" class="btn btn-primary">Predict</button>
                 </div>
             </div>
             <br>
