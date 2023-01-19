@@ -71,7 +71,7 @@
                                     <li><a href=""><i class="menu-icon icon-bar-chart"></i>Prediction Results</a></li>
                                 </ul>
                             </li>
-                            <li><a href=""><i class="menu-icon icon-paste"></i>Tender Prediction Form </a></li>
+                            <li><a href="/predictionForm"><i class="menu-icon icon-paste"></i>Tender Prediction Form </a></li>
                         </ul>
 
                     </div>
