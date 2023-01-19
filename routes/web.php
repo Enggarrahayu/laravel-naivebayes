@@ -21,3 +21,4 @@ Route::get('/predictionForm', function () {
 Route::post('/import', 'App\Http\Controllers\TestingController@excelUpload')->name('import');
 Route::get('/predictAll', 'App\Http\Controllers\TestingController@predictAll')->name('predictAll');
 Route::post('/predictNew', 'App\Http\Controllers\NewTestingDataController@predictNewData')->name('predict_new');
+Route::post('/saveTesting', 'App\Http\Controllers\NewTestingDataController@saveTesting')->name('save_testing');

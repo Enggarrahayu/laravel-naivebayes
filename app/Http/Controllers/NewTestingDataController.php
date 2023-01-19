@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\DB;
-use App\Models\Testing;
+use App\Models\TestingNew;
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Reader\Exception;
 use PhpOffice\PhpSpreadsheet\Writer\Xls;
@@ -54,33 +54,55 @@ class NewTestingDataController extends Controller
         $jp = $_POST['jenis_pengadaan'];
         $mp = $_POST['metode_pengadaan'];
         $pg = $_POST['pagu'];
-        if($_POST['bulan'] == 1){
+        $bl_angka = $_POST['bulan'];
+        if ($_POST['bulan'] == 1) {
             $bl = "Januari";
-        } elseif( $_POST['bulan'] == 2)
-        {
+        } elseif ($_POST['bulan'] == 2) {
             $bl = "Februari";
-        } elseif($_POST['bulan'] == 3){
-            $bl ="Maret";
-        } elseif($_POST['bulan'] == 4){
+        } elseif ($_POST['bulan'] == 3) {
+            $bl = "Maret";
+        } elseif ($_POST['bulan'] == 4) {
             $bl = "April";
-        } else if($_POST['bulan'] == 5){
+        } else if ($_POST['bulan'] == 5) {
             $bl = "Mei";
-        } elseif($_POST['bulan'] == 6){
+        } elseif ($_POST['bulan'] == 6) {
             $bl = "Juni";
-        } elseif($_POST['bulan'] == 7){
+        } elseif ($_POST['bulan'] == 7) {
             $bl = "Juli";
-        }elseif($_POST['bulan'] == 8){
+        } elseif ($_POST['bulan'] == 8) {
             $bl = "Agustus";
-        }elseif($_POST['bulan'] == 9){
+        } elseif ($_POST['bulan'] == 9) {
             $bl = "September";
-        }elseif($_POST['bulan'] == 10){
+        } elseif ($_POST['bulan'] == 10) {
             $bl = "Oktober";
-        }elseif($_POST['bulan'] == 11){
+        } elseif ($_POST['bulan'] == 11) {
             $bl = "November";
-        }elseif($_POST['bulan'] == 12){
+        } elseif ($_POST['bulan'] == 12) {
             $bl = "Desember";
         }
 
-        return view('forms/single_prediction_result', compact('class_hasil', 'nm', 'jp', 'mp', 'pg', 'bl'));
+        return view('forms/single_prediction_result', compact('class_hasil', 'nm', 'jp', 'mp', 'pg', 'bl', 'bl_angka', 'pagu', 'bulan'));
+    }
+
+    public function saveTesting()
+    {
+        // $nama = $_POST['nama'];
+        // // $jenis_pengadaan = $_POST['jenis_pengadaan'];
+        // // $metode_pengadaan = $_POST['metode_pengadaan'];
+        // // dump($metode_pengadaan);
+        // // dump($jenis_pengadaan);
+        // dump($_POST);
+        // die;
+        $testing_new = new TestingNew();
+        $testing_new->nama = $_POST['nama'];
+        $testing_new->metode_pengadaan = $_POST['metode_pengadaan'];
+        $testing_new->jenis_pengadaan = $_POST['jenis_pengadaan'];
+        $testing_new->pagu_angka = $_POST['pagu_angka'];
+        $testing_new->pagu = $_POST['pagu'];
+        $testing_new->bulan_angka = $_POST['bulan_angka'];
+        $testing_new->bulan = $_POST['bulan'];
+        $testing_new->kelas_predict = $_POST['kelas_predict'];
+        $testing_new->save();
+        return redirect('/predictionForm');
     }
 }
