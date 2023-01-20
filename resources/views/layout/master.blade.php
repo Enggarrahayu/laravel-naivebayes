@@ -67,7 +67,7 @@
                                     </i>Testing </a>
                                 <ul id="togglePages2" class="collapse unstyled">
                                     <li><a href="/testing"><i class="menu-icon icon-table"></i>Testing Data</a></li>
-                                    <li><a href=""><i class="menu-icon icon-book"></i>Classification Report</a></li>
+                                    <li><a href="/testingReport"><i class="menu-icon icon-book"></i>Classification Report</a></li>
                                     <li><a href=""><i class="menu-icon icon-bar-chart"></i>Prediction Results</a></li>
                                 </ul>
                             </li>
